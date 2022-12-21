@@ -1,6 +1,13 @@
 <div class="row text-center">
+  <h1>Pokedex</h1>
   <div class="col">
-    <h1>Contador</h1>
+    <p>{{name}}</p>
+    <img src="{{urlImage}}" alt="">
+  </div>
+</div>
+
+<div class="row text-center">
+  <div class="col">
     <h2>{{ contador }}</h2>
   </div>
 </div>
@@ -12,13 +19,3 @@
     <button (click)="decrementar()" class="btn btn-info">Decrementar</button>
   </div>
 </div>
-
-<!--
-<hr>
-
-<div class="row text-center">
-    <div class="col">
-    <app-hijo [contador]="contador"(cambioContador)="contador = $event"></app-hijo>
-  </div>
-</div>
--->

@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HijoComponent } from './contador/hijo/hijo.component';
 import { NietoComponent } from './contador/nieto/nieto.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NietoComponent } from './contador/nieto/nieto.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot({ contador: contadorReducer })
+    StoreModule.forRoot({ contador: contadorReducer }),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
